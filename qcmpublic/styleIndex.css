@@ -1,0 +1,121 @@
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
+.headIndex{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.headIndex h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+    color: red;
+    font-weight: bold;
+    padding-bottom: 2rem;
+
+}
+
+.headIndex a{
+    list-style: none;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-family: 'Exo2', sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.headIndex a:hover{
+    border-bottom: 4px solid white;
+    color: white;
+}
+
+.imgBackground{
+    height: 100%;
+    background: url("background.jpg") no-repeat;
+    background-size: cover;
+}
+
+
+.overlay{
+    height: 100%;
+    background: #000000;
+    position: absolute;
+    width: 100%;
+    opacity: .75;
+}
+
+.mainIndex{
+    height: 50%;
+}
+
+.sectionGenerer{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionGenerer form select{
+    padding: 0.9rem 3rem 0.9rem 2rem;
+    text-align: left;
+    border-radius: 4px;
+    border: 1px solid white;
+    margin: 1.5rem;
+    background: black;
+    text-transform: uppercase;
+    color: white;
+}
+
+.sectionGenerer form input{
+    background-color: #911b1b;
+    border-radius: 29px;
+    border : 0 solid white;
+    color: white;
+    font-size: 15px;
+    padding: 10px 45px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+
+.sectionGenerer form input:hover{
+    background-color: white;
+    color: #081F2D;
+    border-color: #081F2D;
+    transition: 0.3s;
+}
+
+.mainIndex .dl{
+    display: flex;
+    justify-content: center;
+}
+
+.dl a{
+    background-color: #911b1b;
+    text-decoration: none;
+    border-radius: 29px;
+    border : 0 solid white;
+    color: white;
+    font-size: 20px;
+    padding: 10px 45px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.dl a:hover{
+    background-color: white;
+    color: #081F2D;
+    border-color: #081F2D;
+    transition: 0.3s;
+}

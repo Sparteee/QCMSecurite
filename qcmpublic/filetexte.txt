@@ -1,0 +1,12 @@
+Le danger est défini par :
+
+A - la capacité d'un matériel à causer un dommage
+
+B - la gravité d'un dommage
+
+C - la probabilité de survenue d'un dommage
+
+D - la conductibilité d'un dommage
+
+E - aucune des réponses précédentes
+
