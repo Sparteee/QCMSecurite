@@ -10,6 +10,7 @@ if(isset($_POST)){
     if(!empty($_POST["nbQuestions"]) and !empty($_POST["selectCate"])){
         $nbQuestions = htmlspecialchars($_POST["nbQuestions"]);
         $categorie = htmlspecialchars($_POST["selectCate"]);
+        $i = 1;
 
         $sql = "SELECT nom_question FROM questions WHERE id_categorie = '{$categorie}' ORDER BY RAND() LIMIT $nbQuestions";
         $res = $connexion->query($sql);
@@ -18,7 +19,8 @@ if(isset($_POST)){
         $open = fopen("filetexte.txt" , "w");
 
         foreach ($resultatAleatoire as $nom){
-            fwrite($open , $nom->nom_question."\n\n");
+            fwrite($open , $i." - ".$nom->nom_question."\n\n");
+            $i = $i + 1;
         }
         fclose($open);
         $download = "Prêt";
